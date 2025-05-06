@@ -5,15 +5,15 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
 # Odometry estimation modules
 option(ENABLE_ORBSLAM "Enable ORB-SLAM odometry" OFF)
-option(ENABLE_VELSUPP "Enable Velocity suppressor" ON)
-option(ENABLE_IMUVAL "Enable IMU calibration validator" ON)
-option(ENABLE_GRAVITY "Enable Gravity estimation and correction module" ON)
+option(ENABLE_VELSUPP "Enable Velocity suppressor" OFF)
+option(ENABLE_IMUVAL "Enable IMU calibration validator" OFF)
+option(ENABLE_GRAVITY "Enable Gravity estimation and correction module" OFF)
 
 # Local and global mapping modules
-option(ENABLE_SCAN_CONTEXT "Enable ScanContext Loop Detector" OFF)
+option(ENABLE_SCAN_CONTEXT "Enable ScanContext Loop Detector" ON)
 option(ENABLE_DBOW "Enable DBoW Loop Detector" OFF)
-option(ENABLE_GNSS "Enable GNSS module (ROS1 is not supported)" ON)
-option(ENABLE_FLATEARTHER "Enable flat earth assumption module" ON)
+option(ENABLE_GNSS "Enable GNSS module (ROS1 is not supported)" OFF)
+option(ENABLE_FLATEARTHER "Enable flat earth assumption module" OFF)
 
 #################
 ## ROS-related ##
